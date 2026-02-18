@@ -1,0 +1,28 @@
+.stats-container {
+  background-color:#d4eafd; 
+  padding: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: -1px;
+  border-color: white;
+  margin-top: 30px; 
+  margin-top:-62px;
+  flex-wrap: nowrap;
+}
+
+.stats-item {
+  text-align: center;
+}
+
+.stats-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: #003366; /* navy blue */
+}
+
+.stats-text {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #333;
+}

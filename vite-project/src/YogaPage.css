@@ -1,0 +1,103 @@
+.yoga-page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* Keep header on top but smaller spacing */
+.yoga-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -10px;
+  margin-right:520px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 19px;
+  margin-left: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  left:25px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+/* BUTTON LAYOUT */
+.trimester-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-left: 50%;
+  align-items: center;
+  margin-top: 15%;
+}
+
+/* BIG BLUE BUTTONS */
+.trimester-btn1 {
+  width: 100%;
+  padding: 22px 200px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background: #c8f0cf;
+  border: 2px solid #05112f;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trimester-btn2 {
+  width: 100%;
+  padding: 22px 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background:  #e5d3ed;
+  border: 2px solid #451757;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trimester-btn3 {
+  width: 100%;
+  padding: 22px 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background: #e898dc;
+  border: 2px solid #370c31;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.trimester-btn1,
+.trimester-btn2,
+.trimester-btn3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+
+
+.trimester-btn sup {
+  font-size: 10px;
+}

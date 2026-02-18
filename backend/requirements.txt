@@ -1,0 +1,21 @@
+# Data handling
+pandas==2.1.1
+numpy==1.25.2
+
+# Machine Learning
+scikit-learn==1.3.1
+xgboost==1.7.6
+
+# Deep learning (optional, in case you want neural network models later)
+tensorflow==2.15.0
+keras==2.15.0
+
+# API / backend
+flask==2.3.3
+flask-cors==3.0.12
+
+# CSV / file handling
+python-dotenv==1.0.0
+
+# Optional: for preprocessing / splitting / evaluation
+joblib==1.3.2

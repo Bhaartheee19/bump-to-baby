@@ -1,0 +1,180 @@
+/* Overlay modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 32px 28px;
+  width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  animation: fadeIn 0.4s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.modal h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #2a275e;
+}
+
+/* Form layout */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.modal-form input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.modal-form input::placeholder {
+  color: #aaa;
+}
+
+.modal-form input:focus {
+  border-color:#2a275e;
+  box-shadow: 0 0 0 3px rgba(135, 187, 202, 0.15);
+}
+
+/* Gender radio group */
+.modal-form div {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.modal-form label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Button */
+.modal-form button {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #2a275e,#2a275e);
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-form button:hover {
+  transform: translateY(-2px);
+  }
+
+  /* Result wrapper */
+.pregnancy-result {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* COLUMN FIX */
+  gap: 10px;
+}
+
+/* Each box */
+.result-box {
+  background: #ffffff;
+  padding: 8px 25px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.5s ease forwards;
+}
+
+/* Icons */
+.result-box .icon {
+  font-size: 30px;
+}
+
+/* Text stack */
+.result-box .text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.result-box .label {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Values */
+.result-box .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a275e;
+}
+
+/* Congrats */
+.congrats-text {
+  font-size: 15px;
+  font-weight: 550;
+  color: #ff4fad;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media (max-width: 480px) {
+  .pregnancy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pregnancy-week-ring {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;      /* 🔥 stops scrollbar from circle */
+  padding: 0;
+  margin: 0;
+}
+
+.pregnancy-week-ring svg {
+  display: block;        /* removes inline svg spacing issue */
+  max-width: 200px;
+  max-height: 200px;
+}

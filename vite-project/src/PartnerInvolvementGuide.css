@@ -1,0 +1,183 @@
+/* ===== BACKGROUND ===== */
+.partner-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./assets/bg-pregnancy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(209, 209, 209, 0.203);
+  z-index: 1;
+}
+
+/* ===== CONTENT ===== */
+.partner-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.partner-content h1 {
+  font-size: 48px;
+  color: rgba(4, 11, 36, 0.85);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #393939;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/* ===== GRID ===== */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ===== CARD ===== */
+.info-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e042e;
+}
+
+.info-card span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1c6ed5;
+}
+
+/* ===== POPUP ===== */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #ffffff;
+  width: 90%;
+  max-width: 650px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  animation: popupFade 0.3s ease;
+}
+
+.popup-box h2 {
+  margin-top: 0;
+  color: #0f2a44;
+}
+
+.popup-box p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #2c3e50;
+  white-space: pre-line;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-content h1 {
+    font-size: 36px;
+  }
+}
+/* Back Button */
+/* Top Navigation Back Control */
+.nav-back-control {
+    position: fixed;
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
+
+  border-radius: 30px;
+ top: 20px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+
+  cursor: pointer;
+
+}
+
+.nav-back-control:hover {
+  background: #ffffff;
+  transform: translateX(-4px);
+}
+
+.nav-back-control:active {
+  transform: scale(0.95);
+}
+
+
+@media (max-width: 768px) {
+  .nav-back-control {
+    top: 14px;
+    left: 14px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
